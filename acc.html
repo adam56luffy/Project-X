@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuji San X Sakura pro</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    #section{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, #FF8FA3, #FF4D6D, #A4133C);
+}
+.main{
+	width: 350px;
+	height: 500px;
+	background: #590D22;
+	overflow: hidden;
+	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #590D22;
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #FFB3C1;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+input{
+	width: 60%;
+	height: 20px;
+	background: #FFB3C1;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #FFB3C1;
+	background: #FF4D6D;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #FF4D6D;
+}
+.login{
+	height: 460px;
+	background: #FFF0F3;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #FF4D6D;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+@media (max-width: 375px){
+  .main{
+    width: 300px;
+    height: 420px;
+  }
+  .signup label{
+    margin-top: 40px;
+  }
+}
+  </style>
+<body>
+    <header>
+      <a href="#"
+        ><img id="imglogo" src="img/logo.png" alt="logo is gone :("
+      /></a>
+      <div>
+        <ul id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="acc.html">Account</a></li>
+          <li>
+            <a href="cart.html"
+              ><i
+                id="faa"
+                class="fa fa-shopping-bag"
+                aria-hidden="true"
+                id="lg"
+                style="font-size: xx-large"
+              ></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </div>
+      <div id="mob">
+        <a href="cart.html"
+          ><i
+            id="faa"
+            class="fa fa-shopping-bag"
+            aria-hidden="true"
+            style="font-size: x-large"
+          ></i
+        ></a>
+        <i id="bar" class="fa fa-outdent" style="font-size: x-large"></i>
+      </div>
+    </header>
+    <section id="section">
+        <div class="main">  	
+            <input type="checkbox" id="chk" aria-hidden="true">
+    
+                <div class="signup">
+                    <form>
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="txt" placeholder="User name" required="">
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Sign up</button>
+                    </form>
+                </div>
+    
+                <div class="login">
+                    <form>
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Login</button>
+                    </form>
+                </div>
+        </div>
+    </section>
+    <hr>
+    <footer class="section-p1">
+      <div class="col">
+        <img src="img/logo.png" alt="" class="logo" style="width: 60px" />
+        <h4>Contact</h4>
+        <p><strong>Address</strong>: 123 Street bali, City bankai</p>
+        <p><strong>Phone</strong>: 1234557</p>
+        <p><strong>Hours</strong>: 10am ==> 10:30am</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="account.html">sign in</a>
+        <a href="cart.html">view cart</a>
+        <a href="help.html">help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured pay</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+      <div id="cp">
+        <i class="fa fa-copyright cp" aria-hidden="true"></i>
+        <p>2033, All rights reserved</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
